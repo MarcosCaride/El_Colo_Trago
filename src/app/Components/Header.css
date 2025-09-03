@@ -1,0 +1,12 @@
+h1{
+    font-size: 2rem;
+    color: #FA54BA;
+}
+
+header{
+    width: 100%;
+    justify-items: center;
+    position: absolute;
+    top: 0rem;
+    padding-top: 1rem;
+}

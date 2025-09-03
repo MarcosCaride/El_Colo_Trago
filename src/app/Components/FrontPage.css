@@ -1,0 +1,27 @@
+section{
+    margin: 7rem 10rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bodyTitle{
+    position: relative;
+    width: 50%;
+    h3{
+        margin-left: 1rem;
+        font-size: 3rem;
+        margin-bottom: 5rem;
+    }
+    img{
+        position: relative;
+        top: 7rem;
+        z-index: -1;
+    }
+
+    #DescTrago{
+        width: 50%;
+    }
+}

@@ -1,0 +1,75 @@
+section{
+    margin: 7rem 10rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#Text{
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.bodyTitle{
+    position: relative;
+    width: 50%;
+    h3{
+        margin-left: 1rem;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+    img{
+        position: relative;
+        top: 7rem;
+        z-index: -1;
+    }
+
+    #DescTrago{
+        width: 75%;
+    }
+}
+
+.positionRight{
+    text-align: right;
+    justify-items: right;
+}
+
+.under{
+    align-self: end;
+}
+
+.tooLong{
+    position: relative;
+    right: 30%;
+}
+
+@media (max-width: 500px) {
+    section{
+        width: 90%;
+        margin-top: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #Bulb{
+        width: 100px;
+        height: 100px;
+    }
+    .bodyTitle{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        h3{
+            word-wrap: break-word;
+            margin-left: 0;
+            justify-self: flex-start;
+        }
+        #DescTrago{
+            width: 100%;
+        }
+    }
+}
