@@ -4,6 +4,7 @@ import React, { useEffect } from 'react'
 import './HomeSection.css'
 import Image from "next/image";
 
+
 const BlubStyle = {
     position: 'absolute',
     "z-index": "-3",
@@ -64,23 +65,16 @@ const ImgPrincipal = {
     width: '100%',
     height: 'auto'
 }
-let screenWidth
-
-let blubVariable = screen.width < 700 ? "BlubStyleMini" : "BlubStyle"
-console.log(blubVariable);
+let correctionScreen = {
+    width:''
+}
 
 
 const HomeSection = ( {Title, imgSrc, DescTrago, blubPosition, largo} ) => {
     useEffect( () => {
-        screenWidth = window.screen.width
-        console.log(screenWidth);
-
-        console.log(screen.width < 700 ? 'BottomDecoMini' : 'BottomDeco');
+        correctionScreen = window.screen
         
-        
-        screenWidth < 700 ? console.log(true): console.log(false);
-        
-    }, [screenWidth])
+    }, [])
     
     let Blub
     if (blubPosition == "left") {
@@ -93,9 +87,9 @@ const HomeSection = ( {Title, imgSrc, DescTrago, blubPosition, largo} ) => {
                         id='Blub'
                         src={Blub}
                         alt='Fondo de la descripcion del trago'
-                        width={(screen.width < 700) ? 100 : 550}
-                        height={(screen.width < 700) ? 100 : 550}
-                        style={ screen.width < 700 ? BlubStyleMini : BlubStyle }
+                        width={(correctionScreen.width < 700) ? 100 : 550}
+                        height={(correctionScreen.width < 700) ? 100 : 550}
+                        style={ correctionScreen.width < 700 ? BlubStyleMini : BlubStyle }
                     />
                     <p id='DescTrago' >{DescTrago}</p>
                 </div>
@@ -115,7 +109,7 @@ const HomeSection = ( {Title, imgSrc, DescTrago, blubPosition, largo} ) => {
                         alt=''
                         width={350}
                         height={350}
-                        style={ screen.width < 700 ? BottomDecoMini : BottomDeco }
+                        style={ correctionScreen.width < 700 ? BottomDecoMini : BottomDeco }
                     />
 
                     <Image 
@@ -123,7 +117,7 @@ const HomeSection = ( {Title, imgSrc, DescTrago, blubPosition, largo} ) => {
                         alt=''
                         width={100}
                         height={100}
-                        style={screen.width < 700 ? TopDecoMini : TopDeco}
+                        style={correctionScreen.width < 700 ? TopDecoMini : TopDeco}
                     />
                 </div>
             </section>
@@ -137,8 +131,8 @@ const HomeSection = ( {Title, imgSrc, DescTrago, blubPosition, largo} ) => {
                         src={imgSrc}
                         style={ ImgPrincipal }
                         alt="Imagen del trago El Colo"
-                        width={(screen.width < 700) ? 100 : 550}
-                        height={(screen.width < 700) ? 100 : 550}
+                        width={(correctionScreen.width < 700) ? 100 : 550}
+                        height={(correctionScreen.width < 700) ? 100 : 550}
                         priority
                     />
                 </div>
@@ -148,9 +142,9 @@ const HomeSection = ( {Title, imgSrc, DescTrago, blubPosition, largo} ) => {
                         id='Blub'
                         src={Blub}
                         alt='Fondo de la descripcion del trago'
-                        width={(screen.width < 700) ? 100 : 550}
-                        height={(screen.width < 700) ? 100 : 550}
-                        style={ screen.width < 700 ? BlubStyleMini : BlubStyle }
+                        width={(correctionScreen.width < 700) ? 100 : 550}
+                        height={(correctionScreen.width < 700) ? 100 : 550}
+                        style={ correctionScreen.width < 700 ? BlubStyleMini : BlubStyle }
                     />
                     <p id='DescTrago' >{DescTrago}</p>
                 </div>
