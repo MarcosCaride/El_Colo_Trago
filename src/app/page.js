@@ -15,8 +15,8 @@ export default function Home() {
 
   const IngredientList = (
   <ul>
-      <li style={IngredientStyle}>Tequila 1oz</li>
-      <li style={IngredientStyle}>Licor de Frutilla 1oz</li>
+      <li style={IngredientStyle}>Tequila 2oz</li>
+      <li style={IngredientStyle}>Licor de Frutilla 2oz</li>
       <li style={IngredientStyle}>Granadina 1oz</li>
       <li style={IngredientStyle}>Macerado de Moron</li>
       <li style={IngredientStyle}>(1 Cuchara)</li>
