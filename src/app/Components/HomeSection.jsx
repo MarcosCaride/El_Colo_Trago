@@ -21,6 +21,14 @@ const BlubStyleMini = {
     top: '-10%'
 }
 
+const BlubStyleMiniRight = {
+    position: 'absolute',
+    "z-index": "-3",
+    width: "350%",
+    height: '200%',
+    top: '-10%'
+}
+
 const BlubStyleRight = {
     position: 'absolute',
     "z-index": "-3",
@@ -65,6 +73,14 @@ const ImgPrincipal = {
     width: '100%',
     height: 'auto'
 }
+
+const ImgPrincipalRight = {
+    width: '100%',
+    height: 'auto',
+    position: 'relative',
+    bottom: '-10rem'
+}
+
 let correctionScreen = {
     width:''
 }
@@ -125,11 +141,11 @@ const HomeSection = ( {Title, imgSrc, DescTrago, blubPosition, largo} ) => {
     }else{
         Blub = "/BlubRight.png"
         return (
-            <section>
+            <section id='Right'>
                 <div id='Text' className={largo ? 'under' : '' }>
                     <Image
                         src={imgSrc}
-                        style={ ImgPrincipal }
+                        style={ ImgPrincipalRight }
                         alt="Imagen del trago El Colo"
                         width={(correctionScreen.width < 700) ? 100 : 550}
                         height={(correctionScreen.width < 700) ? 100 : 550}
@@ -144,7 +160,7 @@ const HomeSection = ( {Title, imgSrc, DescTrago, blubPosition, largo} ) => {
                         alt='Fondo de la descripcion del trago'
                         width={(correctionScreen.width < 700) ? 100 : 550}
                         height={(correctionScreen.width < 700) ? 100 : 550}
-                        style={ correctionScreen.width < 700 ? BlubStyleMini : BlubStyle }
+                        style={ correctionScreen.width < 700 ? BlubStyleMiniRight : BlubStyleRight }
                     />
                     <p id='DescTrago' >{DescTrago}</p>
                 </div>

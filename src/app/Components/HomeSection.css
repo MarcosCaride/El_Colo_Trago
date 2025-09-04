@@ -38,6 +38,10 @@ section{
     text-align: right;
     justify-items: right;
 }
+#Right{
+    position: relative;
+    text-align: right;
+}
 
 .under{
     align-self: end;
@@ -52,6 +56,7 @@ section{
     section{
         width: 90%;
         margin-top: 10rem;
+        margin-bottom: 10rem;
         margin-left: auto;
         margin-right: auto;
     }
