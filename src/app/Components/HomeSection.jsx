@@ -16,7 +16,7 @@ const BlubStyle = {
 const BlubStyleMini = {
     position: 'absolute',
     "z-index": "-3",
-    width: "300%",
+    width: "350%",
     height: '125%',
     top: '-10%'
 }
@@ -87,7 +87,7 @@ const HomeSection = ( {Title, imgSrc, DescTrago, blubPosition, largo} ) => {
                         id='Blub'
                         src={Blub}
                         alt='Fondo de la descripcion del trago'
-                        width={(correctionScreen.width < 700) ? 100 : 550}
+                        width={(correctionScreen.width < 700) ? 100 : 575}
                         height={(correctionScreen.width < 700) ? 100 : 550}
                         style={ correctionScreen.width < 700 ? BlubStyleMini : BlubStyle }
                     />

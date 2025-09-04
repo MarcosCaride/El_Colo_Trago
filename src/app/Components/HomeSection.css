@@ -30,6 +30,7 @@ section{
 
     #DescTrago{
         width: 75%;
+        text-align: justify;
     }
 }
 

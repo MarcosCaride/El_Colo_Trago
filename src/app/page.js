@@ -40,7 +40,7 @@ export default function Home() {
       
       <HomeSection 
         Title= "El Colo"
-        imgSrc= '/RedDrink.png'
+        imgSrc= '/trago_kralo.png'
         DescTrago= 'El Colo es un trago para los que les gusta experimentar y dejarse sorprender con lo inesperado. Para los aventureros y amantes de la cocina. Por eso utiliza un insumo muy inusual, el moron. Pero al mismo tiempo el Colo busca refrescar y traernos una sensacion de verano utilizando el licor de frutilla para darle su toque frutal. Finalmente con la base de Tequila promete levantarte en toda situacion de fiesta, sea un noche en un boliche o un mediodia en el caribe el Colo siempre esta dispuesto a traerte buenos momentos. '
         blubPosition= "left"
       />
